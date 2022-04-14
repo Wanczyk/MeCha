@@ -1,4 +1,10 @@
-DATABASE_URL = "postgresql://postgres:password@127.0.0.1:5432/mecha"
-SECRET_KEY = "6980a780d743d7757aae91a7cbb75891343b166b762d879a38cf6658bb6b06e6"
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv(".env")
+
+DATABASE_URL = os.environ["DATABASE_URL"]
+SECRET_KEY = os.environ["SECRET_KEY"]
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30

@@ -1,15 +1,11 @@
-from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
-from src.core.dependencies import get_db
 from datetime import datetime, timedelta
-from passlib.context import CryptContext
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 
 from src.models import user as user_model
 from src.core import settings
 from src.core.exceptions import credentials_exception
-from src.schemas import user as user_schema
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
