@@ -1,6 +1,4 @@
-from datetime import datetime, timedelta
-
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from src.crud.auth import auth
