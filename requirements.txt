@@ -2,6 +2,9 @@ SQLAlchemy~=1.4.35
 fastapi~=0.75.1
 uvicorn[standard]
 pydantic~=1.9.0
-
+python-dotenv
 alembic~=1.7.7
 passlib~=1.7.4
+psycopg2
+python-jose
+python-multipart
